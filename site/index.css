@@ -1,0 +1,149 @@
+body
+{
+background-image: url("background.jpg");
+}   
+
+ /* Le fond du corps du site web sera l'image background.jpg qui est dans le répertoire courant*/
+
+
+
+
+nav li     /* On soit que le menu de navigation soit de couleur blanche, de police arial sans serif, chaque li disposé en ligne, et que l'écart de la bordure de gauche soit
+d'une valeur de 3%.*/
+{
+	
+		font-family: Arial, sans-serif;
+	display: inline-block;
+	margin-left: 3%;
+	
+   
+
+}
+
+
+nav ul                        /* On a besoin que le menu de navigation ait le texte au centre */
+{
+text-align: center;
+}
+ 
+nav li a                 /* On ne veut pas de décoration de texte après avoir cliqué sur les éléments du menu, et on veut que le texte soit de couleur blanche */
+{
+	 text-decoration:none; 
+
+	color: white;
+}
+
+nav a:hover    /* a:hover signifie lors du passage de la souris sur l'élement*/
+{  
+	text-decoration: underline;      /* Le texte sera sous-ligné lors du passage de la souris */
+	color: #00A6FF /* Le texte sera de couleur hexadécimal #00A6FF (bleu) lors du passage de la souris */
+;
+}
+
+nav
+{
+	color: black;            /* On crée une border avec un angle de 3% (border-radius), centrée grâce à la balise display:block;, aux magin-left et right en auto. De largeur 65% (width).              */
+display:block;
+border: solid 1px;
+border-radius: 3%;
+margin-top: auto;
+margin-bottom: 1%;
+margin-left: auto;
+margin-right: auto;
+width: 65%;                     
+background-color: #212D30 ;
+
+
+}
+
+#banner
+{                          /* L'image de la banniere situé tout en haut de la page aura un angle de 3% et prendra une largeur de 100% (width) pour être sur la même longueur que la div du menu sous-jacent.  */
+border-radius: 3%;
+                            /* margin-left et right en auto pour centrer la bannière */
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pagecontent
+{                          /* Le bloc de la page où ily aura le contenu écrit et vidéo,  sera constitué d'une border de largeur 65% et d'une hauteur (height) de 900px. Avec une bordure globale arrondie à 1%% (border-radius)           */
+border-radius: 1%;
+border: solid 1px;
+margin-top: auto;
+margin-left: auto;
+margin-right: auto;
+position: static;
+height: 900px;
+width: 65%;
+background-color: #00255B;
+
+}
+
+
+
+.pagecontent p {           /* toutes les balises de paragraphe <p> du bloc de la page seront de couleur blanche(color), centrée(text-align), de taille de police de 150%(font-size), sous-ligné(underline), et de police Arial,sans-serif (font-family) */
+	color: white;
+	text-align: center;
+	font-size: 150%;
+	text-decoration: underline;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
+
+.pagecontent img
+{                              /* l'image <img> contenue dans le bloc de page aura une largeur de 70% et sera centrée grâce aux margin-left et right en auto. Il est nécessaire de mettre en block pour que cela se centre. */
+	width: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+footer
+{
+                              /*Footer de largeur 65% et d'hauteur 70px, il aura une bordure arrondie d'un angle de 2%. Il sera centré. L'écart par rapport à la div d'au dessus est de 2% pour l'espacer (margin-top).  */
+	border-radius: 2%;
+border: solid 1px;
+margin-top: 2%;
+margin-left: auto;
+margin-right: auto;
+width: 65%;
+height: 70px;
+background-color: #212D30;
+
+}
+
+.footer li
+{                                                         /* la police d'écriture des éléments du li du footer sera Arial,Sans-serif. Les éléments sont listés horizontalement (display: inline-block;) */ 
+           	color: white;
+	font-family: Arial, sans-serif;
+	display: inline-block;
+	margin-left: 3%;
+	
+}
+.footer li a 
+{
+
+	text-decoration:none;               /* On ne veut pas de décoration après avoir cliqué sur un lien, et on veut le texte de couleur blanche.       */
+
+	color: white;
+}
+
+.footer a:hover 
+{                                         /* Lors du passage de la souris, les éléments du footer seront soulignés et de couleur #00a6FF (bleu) */
+	text-decoration: underline;
+	color: #00A6FF
+}
+
+.footer ul                        
+{                               /* Le texte de la liste <ul< du footer sera centré */
+    text-align: center;
+}
+
