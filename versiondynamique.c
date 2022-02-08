@@ -6,18 +6,18 @@
 int compter_nombre_totale(float liste[]){ /*Fonction pour compter le nombre total de mois, ou de logs appartir d'une liste */
 	int i;
 	int totale = 0;
-	for(i=0;i<12;i++){ /*on a constater que compter le nombre de ligne n'est pas precis et efficace, car chaque ligne ne correspond forcement pas a un log*/
-		totale = totale + liste[i];}/*on aditionne de maniere algorithmique les valeur de chaque mois ensembre*/
+	for(i=0;i<12;i++){ /*on a constaté que compter le nombre de ligne n'est pas precis et efficace, car chaque ligne ne correspond forcement pas a un log*/
+		totale = totale + liste[i];}/*on aditionne les valeur de chaque mois ensembre*/
     return totale;}
 
-void compter_nombre_mois(float list[]){ /*cette fonction va permettre de calculer le nombre totale de chaque mois et le metre dans une liste*/
+void compter_nombre_mois(float list[]){ /*cette fonction va permettre de calculer le nombre totale de chaque mois et le mettre dans une liste*/
 	int taille = 3;
 	char tab[taille];
 
 	FILE *fichier = fopen("/var/log/apache2/access.log","r"); /*Ouverture du fichier access.log*/
 
-	while(fgetc(fichier) != EOF){ /*Tant qu'on n'est pas à la fin du fichier (EOF), cest a dire que le pointeur de fichier n'atteint pas la fin*/
-		fscanf(fichier,"%*[^/]/%[A-Za-z]%*[^\n]\n", tab); /*lis les chaque ligne du fichier a chaque fois, ce qu'il y a entre "/" et une retour a la ligne, elle ne prend que les alphabets*/
+	while(fgetc(fichier) != EOF){ /*Tant qu'on n'est pas à la fin du fichier (EOF)*/
+		fscanf(fichier,"%*[^/]/%[A-Za-z]%*[^\n]\n", tab); /*lis chaque ligne du fichier a chaque fois, ce qu'il y a entre "/" et une retour a la ligne, elle ne prend que les alphabets*/
 
 		if(strcmp(tab, "Jan") == 0){ /*Si "Jan" apparait dans la lecture*/
 			list[0]++;}   /* alors incrémentation du tableau list[0], qui recense le nombre de fois qu'apprait "Jan" */
@@ -44,23 +44,23 @@ void compter_nombre_mois(float list[]){ /*cette fonction va permettre de calcule
 		if(strcmp(tab, "Dec") == 0){
 			list[11]++;}}
 	rewind(fichier);
-	fclose(fichier);/*elles servent a rembobiner le pointeur et le fermer*/
+	fclose(fichier);/* fermeture du fichier */
 }
 
-void pourcent(const float ListMois[], float ListPourcent[], float nbtotale){ /*elle calcule le nombre de pourcentage de chaque mois */
+void pourcent(const float ListMois[], float ListPourcent[], float nbtotale){ /*calcule le pourcentage de chaque mois */
 	int i;
 	for(i=0;i<12;i++){
-		ListPourcent[i] = (ListMois[i]*100)/nbtotale;}  /*Le tableau listpourcent affecter par le pourcentage de chaque mois*/
+		ListPourcent[i] = (ListMois[i]*100)/nbtotale;}  /*Le tableau listpourcent est  affecté par le pourcentage de chaque mois*/
 	}
 
-		/*cette fonction affiche la première date de connection avec une pointeur*/
+		/*cette fonction affiche la première date de connection avec un pointeur*/
 char* premierdate(char *premier){
 	FILE *pointeur = fopen("/var/log/apache2/access.log","r");   /*Ouverture du fichier access.log*/
 	char date[100];
-	fscanf(pointeur,"%*[^[][%s%*[^/]/", date); /* elle scan dans le fichier aves le pointeur et mettre la chaine de carractere dans la list date qui est une list de chaine de carractere*/
+	fscanf(pointeur,"%*[^[][%s%*[^/]/", date); /*scan dans le fichier avec le pointeur et met la chaine de carractere dans la list date qui est une list de chaine de caractere*/
 	rewind(pointeur);
 	fclose(pointeur);
-	sprintf(premier,"%.*s", 11, date); /*on met dans chaine de carractere premier, les 11 premiers carractere du variable date */
+	sprintf(premier,"%.*s", 11, date); /* 11 premiers carractere du variable date */
 	return premier;}
 
 
@@ -99,16 +99,16 @@ void versiongraphique(float pourcent[], int totale) {
 	char date[100];
 	premierdate(date);
 
-		/*elle ecrit et prépare le texte qu'elle affichera sur le tableau*/
+		/* ecrit et prépare le texte  afficher */
 	sprintf(str, "Depuis le %s on a enregistre %d connexions.",date,totale);
 
-		/*elle ouvre la fenetre graphique */
+		/* ouvre la fenetre graphique */
 	ouvrir_fenetre(430,350);
 	dessiner_rectangle((Point){0,0},430,350,blanc);
 	afficher_texte(str,15,p,noir);
 
 	p.y=300;
-	afficher_texte(" Jan  Fev  Mar  Avr  Mai  Juin  Juil  Aou  Sep  Oct  Nov  Dec",14,p,vert);  /*Affiche les mois en taille 14 et couleur verte*/
+	afficher_texte(" Jan  Fev  Mar  Avr  Mai  Juin  Juil  Aou  Sep  Oct  Nov  Dec",14,p,vert);  /*Affiche les mois en taille 14 et de couleur verte*/
 
 
 	for(i=0; i<12; i++){  /*Pour i = 0 allant jusqu'à 12 (nombre max de mois), i s'incrémente de 1*/
@@ -131,7 +131,7 @@ void lecture_style()
   if ((fd = fopen("aecrire.html","r")) == NULL) /*Si le fichier "aecrire.html" est vide*/
     fprintf(stderr,"ERREUR DE CHARGEMENT DE FICHIER\n"); /*On affiche le message d'erreur*/
   else {
-    while (!feof(fd)){ /*Tant qu'on est pas à la fin du fichier*/
+    while (!feof(fd)){ /*Tant qu'on n'est pas à la fin du fichier*/
       fgets(str,1024,fd); /*fgets lit les chaines de caractères du fichier*/
       printf("%s",str); /*affiche les caractères du fichier*/
 
@@ -146,11 +146,11 @@ void versionweb(float pourcent[], int totale) /*Fonction web*/
 	float listHauteur[12];
 	int ecart = 10;
 
-	char date[100];    /*elle recupere le premier date*/
+	char date[100];    /* recupere la première date*/
 	premierdate(date);
 
 	for(i=0; i<12; i++){
-		listHauteur[i] = (pourcent[i]*300)/40;} /*elle calcule la longeur de chaque baton*/
+		listHauteur[i] = (pourcent[i]*300)/40;} /* calcule la longeur de chaque baton*/
 
 	printf("Content-type: text/html\n\n");  /*Début du HTML à afficher*/
 
@@ -165,9 +165,7 @@ void versionweb(float pourcent[], int totale) /*Fonction web*/
 	printf("<div id = \"vertgraph\">\n");
 	printf("    <ul>\n");
 /*
- * remarquez que chaque barre de l'histogramme est placée tous les 31 pixels,
- * et que le label correspond ici à la hauteur/10, on n'affiche pas le label pour des
- * hauteurs < 25 sinon ça fausse l'affichage.
+ 
  */
 	for(i=0;i<12;i++){
 		if (listHauteur[i]>25){
@@ -191,8 +189,8 @@ void versionweb(float pourcent[], int totale) /*Fonction web*/
 int main(int argc, char* argv[])
 {
 
-	int nbtotale = 0; /*nombre totale de log initialiser a 0*/
- 	float listMois[12];/*la liste de mois est pour contenir le nombre totale de chaque mois*/
+	int nbtotale = 0; /*nombre totale de log initialisé a 0*/
+ 	float listMois[12];/*la liste de mois est là pour contenir le nombre totale de chaque mois*/
  	float listpourcent[12]; /*cette liste permet de contenir le nombre en poucentange de chaque mois*/
 
     compter_nombre_mois(listMois);/*on commence par compter le nombre de chaque mois et les mettre dans une liste */
