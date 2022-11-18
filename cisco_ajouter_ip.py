@@ -14,20 +14,20 @@ Connect.enable()
 
 interface = "interface s 3/"
 ipaddress = "ip address 192.168.2."
-commandas = [interface,ipaddress]
+ip_tab = [interface,ipaddress]
 min=0
 max=2
 mask=" 255.255.255.0"
 
 
 ##############FONCTION AJOUTER IP SUR UN INTERVALLE###################
-def ajouterip(interface,ipaddress,mask,commandas,min,max) :
+def ajouterip(interface,ipaddress,mask,ip_tab,min,max) :
     for i in range (min,max):  #nombre max d'interfaces
-        commandas[0]=interface+str(i) #de interface 0 à max-1
-        commandas[1]=ipaddress+str(i+1) #ip de .1 à  max
+        ip_tab[0]=interface+str(i) #de interface 0 à max-1
+        ip_tab[1]=ipaddress+str(i+1) #ip de .1 à  max
         for i in range (0,1):
-            commandas[1]=commandas[1]+mask #ajoute masque à l'ip
-            output = Connect.send_config_set(commandas)
+            ip_tab[1]=ip_tab[1]+mask #ajoute masque à l'ip
+            output = Connect.send_config_set(ip_tab)
             print(output)
             
 
