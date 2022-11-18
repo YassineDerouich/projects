@@ -8,7 +8,7 @@ Bienvenue dans cette section dédiée aux conteneurs. J'utiliserais l'outil Dock
 <img width="557" alt="docker_concept" src="https://user-images.githubusercontent.com/97849927/202792608-61d215de-e837-48ba-b93c-5784dac1475a.png">
 
 
-Un conteneur est une solution logicielle permet d'exécuter des processus dans un environnement isolé du système d'exploitation,  qui  regroupe le code et toutes ses dépendances afin que l'application fonctionne rapidement et de manière fiable d'un environnement informatique à un autre.
+Un conteneur est une solution logicielle qui permet d'exécuter des processus dans un environnement isolé du système d'exploitation,  qui  regroupe le code et toutes ses dépendances afin que l'application fonctionne rapidement et de manière fiable d'un environnement informatique à un autre.
 
 ### Avantages des conteneurs : ###
 - portabilité
