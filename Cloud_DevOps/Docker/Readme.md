@@ -27,7 +27,7 @@ example: l'image MySQL ( https://hub.docker.com/_/mysql ) contient l'application
 
 
 
-# Utilisation et commande de base ? #
+# Utilisation et commande de base  #
 
 
 `docker pull [nom de l'image] ` pour télécharger une image depuis le Docker Hub  
@@ -55,7 +55,7 @@ example: l'image MySQL ( https://hub.docker.com/_/mysql ) contient l'application
 Welcome to this section dedicated to containers. I will use the Docker tool in this section.
 
 
-# What is a container? #
+# What is a container ? #
 
 <img width="557" alt="docker_concept" src="https://user-images.githubusercontent.com/97849927/202792608-61d215de-e837-48ba-b93c-5784dac1475a.png">
 
@@ -63,7 +63,7 @@ Welcome to this section dedicated to containers. I will use the Docker tool in t
 A container is a software solution for running processes in an environment isolated from the operating system, which bundles the code and all its dependencies so that the application runs quickly and reliably from one computing environment to another.
 
 
-# What is Docker? #
+# What is Docker ? #
 
 Docker is a software solution that allows you to run certain applications in software containers. Note that, by default, Docker containers are automatically stopped if the process inside the application has finished its tasks. 
 
@@ -73,7 +73,7 @@ example: the MySQL image ( https://hub.docker.com/_/mysql ) contains the MYSQL d
 
 
 
-# Basic usage and control ? #
+# Basic usage and control  #
 
 
 docker pull [image name] ` to download an image from the Docker Hub  
