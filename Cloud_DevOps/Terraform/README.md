@@ -53,6 +53,36 @@ ENGLISH VERSION :
 
 Welcome to this section dedicated to the deployment of an infrastructure as code deployment associated to AWS.
 
+ What is Terraform? #
+
+![schema]( https://miro.medium.com/max/1400/1*JPoEFqmHdt-G4D-MefftRQ.png )
+
+Terraform is an infrastructure-as-code tool using a HashiCorp Configuration Language (HCL) syntax formation, which describes the desired cloud or on-premises infrastructure for running an application with its "end state". Terraform then generates a plan to achieve that end state and executes the plan to provision the infrastructure.
+
+# Usage & basic commands #
+
+In the context of AWS, it is necessary to configure its Access Keys and Secret Keys before using Terraform, by not displaying them in its code, of course.
+
+After installation, a folder must be created for the infrastructure and the files ending in .tf (Terraform specific format) must be created there, describing the infrastructure.
+
+![terraform_1](https://user-images.githubusercontent.com/97849927/202788209-cac54007-79e5-46a2-bc1a-b2dbde78adff.png)
+
+
+After describing the infrastructure, here are the basic commands:
+
+-terraform init to initialize the folder where Terraform is located in order to tell it where all our .tf files are located
+
+
+-terraform plan to display a plan of what Terraform plans to deploy according to your instructions
+
+-terraform apply to apply the configuration
+
+-terraform destroy to remove all deployed infrastructure
+
+# Project goal #
+
+
+
 The goal is to deploy an EC2 instance that can communicate with the Internet. This small beginner project is an opportunity to discover the use of Terraform.
 
 
