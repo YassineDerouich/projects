@@ -9,40 +9,26 @@ L'objectif est de déployer une application multi-conteneur (Wordpress + MySQL) 
 # Premier service : MYSQL #
 
 #### On va utiliser une image de mysql en version 5.7 et partager le volume de l'image dans un dossier db_data.  ####
-`services:  
-  db:  
-    image: mysql:5.7  
-    volumes:  
-      - db_data:/var/lib/mysql`  
+
+![image](https://user-images.githubusercontent.com/97849927/202802596-ce5119a0-3661-4898-80a5-2094f964a77d.png)
 
 ### On y définit ensuite les informations de connexion, tels que les mot de passse, le nom de la bdd , le nom d'utilisateur.  ####
 
- `environment:  `
-   `  MYSQL_ROOT_PASSWORD: somewordpress  `
-   `  MYSQL_DATABASE: wordpress  `
-  `   MYSQL_USER: wordpress  `
-  `   MYSQL_PASSWORD: wordpress`  
+ ![image](https://user-images.githubusercontent.com/97849927/202802638-4c15c451-9449-4796-a1bc-004706962dcd.png)
+
     
 # Deuxième service : un serveur wordpress # 
 
 #### Notre servevur WP dépend d'une base de donnée MYSQL####
 
-`  wordpress:  
-    depends_on:  
-      - db  
-    `
+![image](https://user-images.githubusercontent.com/97849927/202802681-1e66b7b1-ffdc-4523-a1f9-043c1d989666.png)
+
     
 #### On va utiliser la dernière version de l'image officielle de WordPress, et wordpress nécessite de tourner sur le port 80 de notre conteneur (mapping du port 8000 du système hôte pointant vers le port 80 du conteneur)####
 
-  `  image: wordpress:latest  
-    ports:  
-      - "8000:80"  
-   `
+ ![image](https://user-images.githubusercontent.com/97849927/202802745-ca66f901-3841-4c98-b775-9200efa6ce5b.png)
+
+ 
 #### On définit les variables importantes pour une utilisation de WP tel que la BDD, le nom d'utilisateur WP, son mot de passe, et enfin le nom de la BDD WordPress####  
-    environment:  
-      WORDPRESS_DB_HOST: db:3306  
-      WORDPRESS_DB_USER: wordpress  
-      WORDPRESS_DB_PASSWORD: wordpress  
-      WORDPRESS_DB_NAME: wordpress  
-      
+    ![image](https://user-images.githubusercontent.com/97849927/202802784-649873ae-5ae3-4ce6-9504-7d5c14721e41.png)
 
