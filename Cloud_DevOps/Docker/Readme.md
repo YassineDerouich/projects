@@ -36,7 +36,7 @@ example: l'image MySQL ( https://hub.docker.com/_/mysql ) contient l'application
 
 `docker rmi [id_image]` pour supprimer une image
 
-`docker run -it -d [nom de l'image]` pour lancer un conteneur. Le paramètre `-it` avec `-it` pour pouvoir créer un shell interactif (via une ligne tty) et effectuer des actions depuis notre conteneur et `-d` pour lancer le conteneur en arrière-plan et libérer ainsi la ligne de commande.  
+`docker run -it -d [nom de l'image]` pour lancer un conteneur. Le paramètre `-it` pour lancer un shell interactif (via une ligne tty) et effectuer des actions depuis notre conteneur et `-d` pour lancer le conteneur en arrière-plan et libérer ainsi la ligne de commande.  
 
 `docker ps -a` pour afficher tous les conteneurs, ainsi que ceux stoppés
 
@@ -84,7 +84,7 @@ example: the MySQL image ( https://hub.docker.com/_/mysql ) contains the MYSQL d
 `docker rmi [image_id]` to delete an image
 
 
-`docker run -it -d [image name]` to launch a container. The `-it` parameter with `-it` to be able to create an interactive shell and perform actions from our container and `-d` to launch the container in the background and free the command line.  
+`docker run -it -d [image name]` to launch a container. The `-it` parameter to be able to launch an interactive shell and perform actions from our container and `-d` to launch the container in the background and free the command line.  
 
 
 `docker ps -a` to display all containers, including the stopped ones
