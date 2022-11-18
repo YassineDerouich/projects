@@ -19,14 +19,14 @@ Après installation, il faudra créer un dossier pour l'infrastructure et y cré
 
 Après avoir décris son infrastructure, voici les commandes de base:
 
--terraform init pour initialiser le dossier où se trouve Terraform afin de lui indiquer où se trouve tous nos fichiers .tf
+`terraform init` pour initialiser le dossier où se trouve Terraform afin de lui indiquer où se trouve tous nos fichiers .tf
 
 
--terraform plan pour afficher un plan de ce que Terraform prévoit de déployer en fonction de vos instructions
+`terraform plan` pour afficher un plan de ce que Terraform prévoit de déployer en fonction de vos instructions
 
--terraform apply pour appliquer la configuration
+`terraform apply` pour appliquer la configuration
 
--terraform destroy pour supprimer toute l'infrastructure déployée
+`terraform destroy` pour supprimer toute l'infrastructure déployée
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -54,9 +54,9 @@ After describing the infrastructure, here are the basic commands:
 -terraform init to initialize the folder where Terraform is located in order to tell it where all our .tf files are located
 
 
--terraform plan to display a plan of what Terraform plans to deploy according to your instructions
+`terraform plan` to display a plan of what Terraform plans to deploy according to your instructions
 
--terraform apply to apply the configuration
+`terraform apply` to apply the configuration
 
--terraform destroy to remove all deployed infrastructure
+`terraform destroy` to remove all deployed infrastructure
 
