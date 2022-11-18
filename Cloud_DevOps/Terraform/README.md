@@ -34,12 +34,12 @@ Architecture schema :
 ![schema](https://user-images.githubusercontent.com/97849927/202782014-ed5c7e28-75c1-4486-9f5d-614715752fcf.png)
 
 
--Creation of the VPC 
--Creation of a private subnet to protect our EC2 instance
--Creation of a public subnet outgoing through the Internet Gateway 
--Creation of the NAT Gateway in the public subnet to allow internet access to the EC2 instance 
--Assign an IP elastic to the Nat Gateway 
--Definition of the routing tables to allow the exit to the Internet 
--Creation of an "SSM" role assigned to the EC2 instance to allow remote access directly on the AWS console
+-Creation of the VPC   
+-Creation of a private subnet to protect our EC2 instance  
+-Creation of a public subnet outgoing through the Internet Gateway  
+-Creation of the NAT Gateway in the public subnet to allow internet access to the EC2 instance  
+-Assign an IP elastic to the Nat Gateway  
+-Definition of the routing tables to allow the exit to the Internet  
+-Creation of an "SSM" role assigned to the EC2 instance to allow remote access directly on the AWS console  
 
 
