@@ -12,7 +12,7 @@ L'objectif est de déployer une application multi-conteneur (Wordpress + MySQL) 
 
 ![image](https://user-images.githubusercontent.com/97849927/202802596-ce5119a0-3661-4898-80a5-2094f964a77d.png)
 
-### On y définit ensuite les informations de connexion, tels que les mot de passse, le nom de la bdd , le nom d'utilisateur.  ####
+#### On y définit ensuite les informations de connexion, tels que les mot de passse, le nom de la bdd , le nom d'utilisateur.  ####
 
  ![image](https://user-images.githubusercontent.com/97849927/202802638-4c15c451-9449-4796-a1bc-004706962dcd.png)
 
@@ -30,5 +30,5 @@ L'objectif est de déployer une application multi-conteneur (Wordpress + MySQL) 
 
  
 #### On définit les variables importantes pour une utilisation de WP tel que la BDD, le nom d'utilisateur WP, son mot de passe, et enfin le nom de la BDD WordPress####  
-    ![image](https://user-images.githubusercontent.com/97849927/202802784-649873ae-5ae3-4ce6-9504-7d5c14721e41.png)
+ ![image](https://user-images.githubusercontent.com/97849927/202802784-649873ae-5ae3-4ce6-9504-7d5c14721e41.png)
 
