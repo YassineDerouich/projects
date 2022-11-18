@@ -12,9 +12,21 @@ Schéma de l'architecture :
 
 
 -Création du VPC   
--Création d'un subnet private pour protéger notre instance EC2  
+![image](https://user-images.githubusercontent.com/97849927/202808008-a884d700-8b75-412d-9543-5fd641c52c0e.png)
+
 -Création d'un subnet public sortant par l'Internet Gateway  
+
+![image](https://user-images.githubusercontent.com/97849927/202808119-a4702afe-9f7a-474c-bf8b-02614c88fa57.png)
+
+
+-Création d'un subnet private pour protéger notre instance EC2  
+![image](https://user-images.githubusercontent.com/97849927/202808068-c9fed2e0-5538-4186-9084-313ef5f9ddd7.png)
+
+
+
 -Création de la NAT Gateway dans le subnet public pour permettre l'accès internet à l'instance EC2  
+
+
 -Attribution d'une elastic IP à la Nat Gateway  
 -Définition des tables de routage pour permettre la sortie vers Internet  
 -Création d'un role "SSM" attribuée à l'intance EC2pour permettre l'accès à distance directement sur la console AWS  
