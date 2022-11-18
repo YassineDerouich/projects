@@ -8,7 +8,7 @@ L'objectif est de déployer une application multi-conteneur (Wordpress + MySQL) 
 
 # Premier service : MYSQL #
 
-### On va utiliser une image de mysql en version 5.7 et partager le volume de l'image dans un dossier db_data.  ###
+#### On va utiliser une image de mysql en version 5.7 et partager le volume de l'image dans un dossier db_data.  ####
 `services:
   db:
     image: mysql:5.7
