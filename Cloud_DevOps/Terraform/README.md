@@ -19,6 +19,7 @@ Schéma de l'architecture :
 -Définition des tables de routage pour permettre la sortie vers Internet 
 -Création d'un role "SSM" attribuée à l'intance EC2pour permettre l'accès à distance directement sur la console AWS
 
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 ENGLISH VERSION :
 
