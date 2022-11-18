@@ -15,7 +15,7 @@ L'objectif est de déployer une application multi-conteneur (Wordpress + MySQL) 
     volumes:
       - db_data:/var/lib/mysql`
 
-### On y définit ensuite les informations de connexion, tels que les mot de passse, le nom de la bdd , le nom d'utilisateur.  ###
+### On y définit ensuite les informations de connexion, tels que les mot de passse, le nom de la bdd , le nom d'utilisateur.  ####
 
  `environment:
      MYSQL_ROOT_PASSWORD: somewordpress
@@ -25,20 +25,20 @@ L'objectif est de déployer une application multi-conteneur (Wordpress + MySQL) 
     
 # Deuxième service : un serveur wordpress # 
 
-### Notre servevur WP dépend d'une base de donnée MYSQL.###
+#### Notre servevur WP dépend d'une base de donnée MYSQL####
 
 `  wordpress:
     depends_on:
       - db
     `
     
-### On va utiliser la dernière version de l'image officielle de WordPress, et wordpress nécessite de tourner sur le port 80 de notre conteneur (mapping du port 8000 du système hôte pointant vers le port 80 du conteneur)###
+#### On va utiliser la dernière version de l'image officielle de WordPress, et wordpress nécessite de tourner sur le port 80 de notre conteneur (mapping du port 8000 du système hôte pointant vers le port 80 du conteneur)####
 
   `  image: wordpress:latest
     ports:
       - "8000:80"
    `
-### On définit les variables importantes pour une utilisation de WP tel que la BDD, le nom d'utilisateur WP, son mot de passe, et enfin le nom de la BDD WordPress.###  
+#### On définit les variables importantes pour une utilisation de WP tel que la BDD, le nom d'utilisateur WP, son mot de passe, et enfin le nom de la BDD WordPress####  
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
