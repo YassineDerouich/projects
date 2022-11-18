@@ -14,9 +14,13 @@ Dans le cadre d'AWS, il est nécessaire de configurer ses Access Keys et Secret 
 
 Après installation, il faudra créer un dossier pour l'infrastructure et y créer les fichiers terminant en .tf (format spécifique à Terraform), en y décrivant l'infrastructure.
 
+![terraform_1](https://user-images.githubusercontent.com/97849927/202788209-cac54007-79e5-46a2-bc1a-b2dbde78adff.png)
+
+
 Après avoir décris son infrastructure, voici les commandes de base:
 
 -terraform init pour initialiser le dossier où se trouve Terraform afin de lui indiquer où se trouve tous nos fichiers .tf
+
 
 -terraform plan pour afficher un plan de ce que Terraform prévoit de déployer en fonction de vos instructions
 
