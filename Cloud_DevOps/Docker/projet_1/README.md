@@ -35,7 +35,7 @@ L'objectif est de déployer une application multi-conteneur (Wordpress + MySQL) 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ENGLISH VERSION :
 
-# Project objective  
+# Project Goal  
 
 The objective is to deploy a multi-container application (Wordpress + MySQL) using a docker-compose.yml file  
 
