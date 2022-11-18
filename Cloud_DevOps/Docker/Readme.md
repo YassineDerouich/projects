@@ -75,22 +75,28 @@ example: the MySQL image ( https://hub.docker.com/_/mysql ) contains the MYSQL d
 
 # Basic usage and control  #
 
+`docker pull [image name] ` to download an image from the Docker Hub  
 
-docker pull [image name] ` to download an image from the Docker Hub  
 
-docker images` to display all docker images  
+`docker images` to display all docker images  
 
-docker rmi [image_id]` to delete an image
 
-docker run -it -d [image name]` to launch a container. The -it parameter with -i to be able to create an interactive shell and perform actions from our container and -d to launch the container in the background and free the command line.  
+`docker rmi [image_id]` to delete an image
 
-docker ps -a` to display all containers, including the stopped ones
 
-docker stop [container_id]` to stop a container
+`docker run -it -d [image name]` to launch a container. The -it parameter with -i to be able to create an interactive shell and perform actions from our container and -d to launch the container in the background and free the command line.  
 
-docker rm [container_id]` to remove a container
 
-docker login` to connect to the DockerHub in case you want to upload an image.
+`docker ps -a` to display all containers, including the stopped ones
+
+
+`docker stop [container_id]` to stop a container
+
+
+`docker rm [container_id]` to remove a container
+
+
+`docker login` to connect to the DockerHub in case you want to upload an image.
 
 
 
