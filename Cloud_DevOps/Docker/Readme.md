@@ -44,4 +44,47 @@ example: l'image MySQL ( https://hub.docker.com/_/mysql ) contient l'application
 
 --------------------------------------------------------------------------------------------------------
 
-Welcome to this section dedicated to containers. I will use the Docker tool in this part.
+Welcome to this section dedicated to containers. I will use the Docker tool in this section.
+
+
+# What is a container? #
+
+<img width="557" alt="docker_concept" src="https://user-images.githubusercontent.com/97849927/202792608-61d215de-e837-48ba-b93c-5784dac1475a.png">
+
+
+A container is a software solution for running processes in an environment isolated from the operating system, which bundles the code and all its dependencies so that the application runs quickly and reliably from one computing environment to another.
+
+
+# What is Docker? #
+
+Docker is a software solution that allows you to run certain applications in software containers. Note that, by default, Docker containers are automatically stopped if the process inside the application has finished its tasks. 
+
+A Docker image is a read-only model used to create Docker containers. It is composed of several layers packaging all the installations, dependencies, libraries, processes and application code needed for a fully operational container environment.
+
+example: the MySQL image ( https://hub.docker.com/_/mysql ) contains the MYSQL database application.
+
+
+
+# Basic usage and control ? #
+
+
+docker pull [image name] ` to download an image from the Docker Hub  
+
+docker images` to display all docker images  
+
+docker rmi [image_id]` to delete an image
+
+docker run -it -d [image name]` to launch a container. The -it parameter with -i to be able to create an interactive shell and perform actions from our container and -d to launch the container in the background and free the command line.  
+
+docker ps -a` to display all containers, including the stopped ones
+
+docker stop [container_id]` to stop a container
+
+docker rm [container_id]` to remove a container
+
+docker login` to connect to the DockerHub in case you want to upload an image.
+
+
+
+
+
