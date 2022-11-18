@@ -1,4 +1,6 @@
-Bienvenue dans cette section dédiée au déploiement d'une infrastructure as code associée à AWS.
+(/!\ SEE BELOW FOR ENGLISH VERSION /!\ )
+
+Bienvenue dans cette section dédiée au déploiement d'une infrastructure as code associée à AWS. 
 
 L'objectif est de déployer une instance EC2 pouvant communiquer à Internet. Ce petit projet débutant est l'occasion de découvrir l'utilisation de Terraform.
 
