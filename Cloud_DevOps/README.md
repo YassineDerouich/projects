@@ -2,6 +2,7 @@ Bonjour et bienvenue sur ce repository consacré à mes projets dans le domaine 
 
 En parallèle de mes études, je prends un très grand plaisir à apprendre les différents outils nécessaires au Cloud / DevOps et ce GitHub est l'occasion d'en présenter !
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Hello and welcome on this repository dedicated to my projects in the Cloud / DevOps domain.
 
