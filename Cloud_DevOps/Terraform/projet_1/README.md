@@ -22,13 +22,18 @@ Schéma de l'architecture :
 -Création d'un subnet private pour protéger notre instance EC2  
 ![image](https://user-images.githubusercontent.com/97849927/202808068-c9fed2e0-5538-4186-9084-313ef5f9ddd7.png)
 
-
+-Création de l'instance EC2
 
 -Création de la NAT Gateway dans le subnet public pour permettre l'accès internet à l'instance EC2  
 
 
 -Attribution d'une elastic IP à la Nat Gateway  
+
+![image](https://user-images.githubusercontent.com/97849927/202808234-7faaceab-c439-449a-8bf8-7180d40f9f24.png)
+
 -Définition des tables de routage pour permettre la sortie vers Internet  
+
+
 -Création d'un role "SSM" attribuée à l'intance EC2pour permettre l'accès à distance directement sur la console AWS  
 
 
