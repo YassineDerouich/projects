@@ -4,6 +4,8 @@ Bienvenue dans cette section dédiée au déploiement d'une infrastructure as co
 
 # Qu'est-ce que Terraform ? #
 
+![schema]( https://miro.medium.com/max/1400/1*JPoEFqmHdt-G4D-MefftRQ.png )
+
 Terraform est un outil d'infrastructure as code utilisant un formation de syntaxe HCL (HashiCorp Configuration Language), qui décrit l'infrastructure cloud ou sur site souhaitée pour l'exécution d'une application avec son "état final". Terraform génère ensuite un plan permettant d'atteindre cet état final et exécute le plan pour mettre à disposition l'infrastructure.
 
 # Utilisation & commandes de base #
