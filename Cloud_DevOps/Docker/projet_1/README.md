@@ -17,11 +17,11 @@ L'objectif est de déployer une application multi-conteneur (Wordpress + MySQL) 
 
 ### On y définit ensuite les informations de connexion, tels que les mot de passse, le nom de la bdd , le nom d'utilisateur.  ####
 
- `environment:  
-     MYSQL_ROOT_PASSWORD: somewordpress  
-     MYSQL_DATABASE: wordpress  
-     MYSQL_USER: wordpress  
-     MYSQL_PASSWORD: wordpress`  
+ `environment:  `
+   `  MYSQL_ROOT_PASSWORD: somewordpress  `
+   `  MYSQL_DATABASE: wordpress  `
+  `   MYSQL_USER: wordpress  `
+  `   MYSQL_PASSWORD: wordpress`  
     
 # Deuxième service : un serveur wordpress # 
 
