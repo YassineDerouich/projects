@@ -33,7 +33,7 @@ exemple:
 
 ![dockerfile](https://user-images.githubusercontent.com/97849927/202914759-2bec52c1-adbd-4cce-a759-3b7a96986a77.PNG)
 
-Ici, on prend la dernière version de l'image de python 3.8 et on l'a modifie en créant des dossiers (mkdir) et d'autres opérations.  
+Ici, on prend la dernière version de l'image de python 3.7 et on l'a modifie en créant des dossiers (mkdir) et d'autres opérations.  
 
 Une fois cette image créée, on devra la lancé via un conteneur.  
 
