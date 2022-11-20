@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/97849927/202915554-97655dbf-645b-4b60-9ef8-1a72c9852b18.png)
 
--6 tests pratiques en anglais trouvables sur Udemy : 
+- 6 tests pratiques en anglais trouvables sur Udemy : 
 
 `https://www.udemy.com/course/aws-certified-cloud-practitioner-practice-test/`
 
@@ -10,7 +10,7 @@ Permet de se préparer au format de l'examen et d'apprendre / revoir certaines n
 pour passer l'examen
 
 
-Formation gratuite officielle d'AWS Trainings & Certifications :
+- Formation gratuite officielle d'AWS Trainings & Certifications :
 
 `https://aws.amazon.com/fr/training/digital/aws-cloud-practitioner-essentials/`
 
