@@ -25,11 +25,11 @@ Après installation de terraform , il faudra créer un dossier pour l'infrastruc
 
 Sur ces fichiers on y décrira l'infrastructure à déployer. Par exemple, pour AWS on peut créer un fichier network.tf qui déploiera seulement les éléments réseaux (VPC,subnet,gateway,etc.) et un autre fichier ec2.tf qui se chargera de déployer les instances EC2. 
 
-
-
-
 ![terraform_1](https://user-images.githubusercontent.com/97849927/202788209-cac54007-79e5-46a2-bc1a-b2dbde78adff.png)
 
+En 1er lieu on déclarera notre cloud provider , dans un fichier main.tf 
+
+![image](https://user-images.githubusercontent.com/97849927/202902930-4a0655ca-c4ab-4892-a15a-99e6ee33f0c4.png)
 
 
 Après avoir décris son infrastructure, voici les commandes de base:
