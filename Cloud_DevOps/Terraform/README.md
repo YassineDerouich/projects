@@ -8,13 +8,19 @@ Bienvenue dans cette section dédiée au déploiement d'une infrastructure as co
 
 Terraform est un outil d'infrastructure as code utilisant une syntaxe HCL (HashiCorp Configuration Language), qui décrit l'infrastructure cloud ou sur site souhaitée pour l'exécution d'une application avec son "état final". Terraform génère ensuite un plan permettant d'atteindre cet état final et exécute le plan pour mettre à disposition l'infrastructure.
 
+Terraform est compatible avec un grand nombre de Cloud Providers. La liste est disponible sur https://registry.terraform.io/browse/providers
+ainsi que des explications sur leur implémentation.
+
 # Utilisation & commandes de base #
 
 Dans le cadre d'AWS, il est nécessaire de configurer ses Access Keys et Secret Keys avant d'utiliser Terraform, en ne les affichant pas dans son code, bien sûr.
 
-Après installation, il faudra créer un dossier pour l'infrastructure et y créer les fichiers terminant en .tf (format spécifique à Terraform), en y décrivant l'infrastructure.
+Installation sur Linux, voir https://computingforgeeks.com/how-to-install-terraform-on-linux/
+
+Après installation de terraform , il faudra créer un dossier pour l'infrastructure et y créer les fichiers terminant en .tf (format spécifique à Terraform), en y décrivant l'infrastructure.
 
 ![terraform_1](https://user-images.githubusercontent.com/97849927/202788209-cac54007-79e5-46a2-bc1a-b2dbde78adff.png)
+
 
 
 Après avoir décris son infrastructure, voici les commandes de base:
