@@ -25,11 +25,19 @@ Une image Docker est un modèle en lecture seule, utiliser pour créer des conte
 
 example: l'image MySQL ( https://hub.docker.com/_/mysql ) contient l'application base de donnée MYSQL.
 
-Pour lancer ses conteneurs, docker utilise les "dockerfile". Les dockerfile sont des fichiers décrivant des instructions permettant la construction d'une image.
+Pour créer ses propres images, docker utilise les "dockerfile". 
 
-exemple:  
-![image](https://user-images.githubusercontent.com/97849927/202914598-c4585b81-3cf0-4e17-ac91-de2c76294273.png)
+Les dockerfile sont des fichiers décrivant des instructions permettant la construction d'une image.  
 
+exemple:
+
+![dockerfile](https://user-images.githubusercontent.com/97849927/202914759-2bec52c1-adbd-4cce-a759-3b7a96986a77.PNG)
+
+Ici, on prend la dernière version de l'image de python 3.8 et on l'a modifie en créant des dossiers (mkdir) et d'autres opérations.  
+
+Une fois cette image créée, on devra la lancé via un conteneur.  
+
+Pour lancer une application avec plusieurs conteneurs, on utilise le fichier docker-compose.yml (voir projet).
 
 # Utilisation et commande de base  #
 
