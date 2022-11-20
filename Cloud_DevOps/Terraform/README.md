@@ -13,7 +13,7 @@ ainsi que des explications sur leur implémentation.
 
 Par exemple, au lieu d'aller sur la console AWS pour déployer une instance EC2 Linux grâce à Terraform.
 
-Dans notre fichier tf on peut y écrire
+Dans notre fichier tf ec2.tf on peut par exemple y écrire :
 
 ![ec2_schem](https://user-images.githubusercontent.com/97849927/202903671-46ceb07f-1c83-4177-9a8b-aba51dc948b8.jpg)
 
