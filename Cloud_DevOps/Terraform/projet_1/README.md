@@ -8,7 +8,14 @@ L'objectif est de déployer une instance EC2 pouvant communiquer à Internet et 
 
 Schéma de l'architecture :
 
-![schema](https://user-images.githubusercontent.com/97849927/202782014-ed5c7e28-75c1-4486-9f5d-614715752fcf.png)  
+![image](https://user-images.githubusercontent.com/97849927/202912909-55736596-4c4c-4bf5-a6d6-ef8fbe7b0bbe.png)
+
+
+1. Nous allons dans un premier temps créer un VPC. 
+2. Ensuite nous créérons un subnet public et un subnet private contenant l'instance EC2.
+3. Notre subnet public relié à l'internet gateway permettra, grâce à la création d'une Nat Gateway, de faire sortir vers internet notre instance du subnet privé.
+4.  Nous souhaitons également nous connecter à distance à la machine, nous allons utiliser le service AWS SSM. Pour se faire, nous devons créer un rôle avec des permissions qui lui sont attachés.
+5. Enfin nous créerons un profil d'instance, qui contiendra notre rôle, et qui sera attribué à notre instance EC2.
 
 ### > Fichier main.tf ###
 - Déclaration du Cloud Provider (AWS)  
@@ -16,10 +23,10 @@ Schéma de l'architecture :
 
 ### > Fichier network.tf ###
 
-- Création du VPC   
+- Création du VPC qui contiendra toute notre architecture   
 ![vpc](https://user-images.githubusercontent.com/97849927/202911525-2a9bc443-8515-419f-b2ef-19a05f9e05d8.png)  
 
-- Création d'un subnet public et d'un subnet privé qui contiendra notre instance EC2.  
+- Création d'un subnet public pour sortir d'internet, et d'un subnet privé qui contiendra notre instance EC2.  
 
 ![subnet](https://user-images.githubusercontent.com/97849927/202911640-6fa17146-6bd2-43c3-87a1-f87b97dcdcdc.PNG)  
 
