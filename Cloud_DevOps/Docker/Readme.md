@@ -46,7 +46,7 @@ example: l'image MySQL ( https://hub.docker.com/_/mysql ) contient l'application
 
 `docker login` pour se connecter au DockerHub dans l'éventualité d'y upload une image.
 
-
+`docker-compose up -d` lancer une application multi-conteneurs en arrière-plan
 
 
 
