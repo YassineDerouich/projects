@@ -23,7 +23,7 @@ Docker est une solution logicielle permettant de lancer certaines applications d
 
 - Une image Docker est un modèle en lecture seule, utilisé pour créer des conteneurs Docker. Elle est composée de plusieurs couches empaquetant toutes les installations, dépendances, bibliothèques, processus et codes d'application nécessaires pour un environnement de conteneur pleinement opérationnel.
 
-example: l'image MySQL ( https://hub.docker.com/_/mysql ) contient l'application base de donnée MYSQL.
+example: l'image MySQL ( https://hub.docker.com/_/mysql ) contient l'application base de donnée MYSQL. Et pour éxécuter cette application, on doit créer un conteneur contenant cette image.
 
 - Pour créer ses propres images, docker utilise les "dockerfile". 
 
