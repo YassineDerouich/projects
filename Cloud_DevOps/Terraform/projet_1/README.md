@@ -29,7 +29,7 @@ Schéma de l'architecture :
 
 -Création de l'instance EC2
 
-![ec2_schem](https://user-images.githubusercontent.com/97849927/202905014-49ca1fc9-3de9-4fdc-ba19-36cc575cffdc.jpg)
+![ec2](https://user-images.githubusercontent.com/97849927/202909711-20bc0bb3-a40f-4ef3-aa33-c28ff2c0682b.jpg)
 
 
 -Création de la NAT Gateway dans le subnet public pour permettre l'accès internet à l'instance EC2  
