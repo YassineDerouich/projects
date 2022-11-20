@@ -2,7 +2,7 @@
 
 # Objectif du projet #
 
-L'objectif est de déployer une instance EC2 pouvant communiquer à Internet. Ce petit projet débutant est l'occasion de découvrir l'utilisation de Terraform.
+L'objectif est de déployer une instance EC2 pouvant communiquer à Internet et accessible à distance. Ce petit projet débutant est l'occasion de découvrir l'utilisation de Terraform.
 
 
 
@@ -10,11 +10,11 @@ Schéma de l'architecture :
 
 ![schema](https://user-images.githubusercontent.com/97849927/202782014-ed5c7e28-75c1-4486-9f5d-614715752fcf.png)
 
-### ....Fichier main.tf.... ###
+### > Fichier main.tf ###
 -Déclaration du Cloud Provider (AWS)  
 ![image](https://user-images.githubusercontent.com/97849927/202905079-81198c45-7995-48bf-8973-7d6814c6497a.png)  
 
-### Fichier network.tf ###
+### > Fichier network.tf ###
 
 -Création du VPC   
 ![image](https://user-images.githubusercontent.com/97849927/202808008-a884d700-8b75-412d-9543-5fd641c52c0e.png)
