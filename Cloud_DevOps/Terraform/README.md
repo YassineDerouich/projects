@@ -17,7 +17,10 @@ Dans le cadre d'AWS, il est nécessaire de configurer ses Access Keys et Secret 
 
 Installation sur Linux, voir https://computingforgeeks.com/how-to-install-terraform-on-linux/
 
-Après installation de terraform , il faudra créer un dossier pour l'infrastructure et y créer les fichiers terminant en .tf (format spécifique à Terraform), en y décrivant l'infrastructure.
+Après installation de terraform , il faudra créer un dossier pour l'infrastructure et y créer les fichiers terminant en .tf (format spécifique à Terraform).
+
+Sur ces fichiers on y décrira l'infrastructure à déployer. Par exemple, pour AWS on peut créer un fichier network.tf qui déploiera seulement les éléments réseaux (VPC,subnet,gateway,etc.) et un autre fichier ec2.tf qui se chargera de déployer les instances EC2. 
+
 
 ![terraform_1](https://user-images.githubusercontent.com/97849927/202788209-cac54007-79e5-46a2-bc1a-b2dbde78adff.png)
 
@@ -28,7 +31,7 @@ Après avoir décris son infrastructure, voici les commandes de base:
 `terraform init` pour initialiser le dossier où se trouve Terraform afin de lui indiquer où se trouve tous nos fichiers .tf
 
 
-`terraform plan` pour afficher un plan de ce que Terraform prévoit de déployer en fonction de vos instructions
+`terraform plan` pour afficher un plan de ce que Terraform prévoit de déployer en fonction de vos instructions décris dans vos fichiers .tf
 
 `terraform apply` pour appliquer la configuration
 
