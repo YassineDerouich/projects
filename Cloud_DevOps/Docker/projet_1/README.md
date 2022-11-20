@@ -31,6 +31,9 @@ L'objectif est de déployer une application multi-conteneur (Wordpress + MySQL) 
  
 #### On définit les variables importantes pour une utilisation de WP tel que la BDD, le nom d'utilisateur WP, son mot de passe, et enfin le nom de la BDD WP ####    
  ![image](https://user-images.githubusercontent.com/97849927/202802784-649873ae-5ae3-4ce6-9504-7d5c14721e41.png)
+ 
+Lancement des conteneurs `docker compose up -d`
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ENGLISH VERSION :
