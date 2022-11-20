@@ -1,4 +1,4 @@
-Welcome to my GitHub :-) 
+Bienvenue sur mon GitHub 
 
 Most Projects are both translated in French and in English.
 
