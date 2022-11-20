@@ -8,7 +8,7 @@ L'objectif est de déployer une instance EC2 pouvant communiquer à Internet et 
 
 Schéma de l'architecture :
 
-![schema](https://user-images.githubusercontent.com/97849927/202782014-ed5c7e28-75c1-4486-9f5d-614715752fcf.png)
+![schema](https://user-images.githubusercontent.com/97849927/202782014-ed5c7e28-75c1-4486-9f5d-614715752fcf.png)  
 
 ### > Fichier main.tf ###
 - Déclaration du Cloud Provider (AWS)  
@@ -16,30 +16,45 @@ Schéma de l'architecture :
 
 ### > Fichier network.tf ###
 
--Création du VPC   
-![image](https://user-images.githubusercontent.com/97849927/202808008-a884d700-8b75-412d-9543-5fd641c52c0e.png)
+- Création du VPC   
+![vpc](https://user-images.githubusercontent.com/97849927/202911525-2a9bc443-8515-419f-b2ef-19a05f9e05d8.png)  
 
--Création d'un subnet public sortant par l'Internet Gateway  
+- Création d'un subnet public et d'un subnet privé qui contiendra notre instance EC2.  
 
-![image](https://user-images.githubusercontent.com/97849927/202808119-a4702afe-9f7a-474c-bf8b-02614c88fa57.png)
+![subnet](https://user-images.githubusercontent.com/97849927/202911640-6fa17146-6bd2-43c3-87a1-f87b97dcdcdc.PNG)  
 
 
--Création d'un subnet private pour protéger notre instance EC2  
-![image](https://user-images.githubusercontent.com/97849927/202808068-c9fed2e0-5538-4186-9084-313ef5f9ddd7.png)
+- Création de l'internet gateway , de l'elastic IP associé à la nat gateway  
+
+![igw_eip_ngw](https://user-images.githubusercontent.com/97849927/202911687-6ced5d3d-2291-41ab-b9c7-e4961b79a957.PNG)  
+
+
+- Création des tables de routage pour les 2 subnets 
+
+![route_public_et_route_private](https://user-images.githubusercontent.com/97849927/202911702-91ade934-8f44-44d8-b8ad-5666fc9ca7ca.PNG)  
+
+
+- Association de chaque table de routage avec son subnet approprié  
+
+![route_association](https://user-images.githubusercontent.com/97849927/202911733-1b1a86d5-7bbe-4e6d-a285-bda7e8a21648.PNG)  
+
+### > Fichier iam.tf ###  
+
+
+- Création du rôle et de la policy  
+
+![iam_role_policy](https://user-images.githubusercontent.com/97849927/202911807-5256ebe4-6e34-4062-8f79-b43bd88fa2a1.PNG)  
+
+- Attachement de cette policy au rôle créée, et création d'un profil d'instane pour notre EC2.  
+
+![iam_policy_attachment_and_instance_profile](https://user-images.githubusercontent.com/97849927/202911842-44cf2da6-1926-4944-924a-c07745593b8d.PNG)  
+
+
+### > Fichier ec2.tf ###  
 
 -Création de l'instance EC2
 
-![ec2](https://user-images.githubusercontent.com/97849927/202909711-20bc0bb3-a40f-4ef3-aa33-c28ff2c0682b.jpg)
-
-
--Création de la NAT Gateway dans le subnet public pour permettre l'accès internet à l'instance EC2  
-
-
--Attribution d'une elastic IP à la Nat Gateway  
-
-![image](https://user-images.githubusercontent.com/97849927/202808234-7faaceab-c439-449a-8bf8-7180d40f9f24.png)
-
--Définition des tables de routage pour permettre la sortie vers Internet  
+![ec2](https://user-images.githubusercontent.com/97849927/202911761-64166cba-41e6-4a2f-baa4-a0cfa7748749.jpg)
 
 
 -Création d'un role "SSM" attribuée à l'intance EC2pour permettre l'accès à distance directement sur la console AWS  
