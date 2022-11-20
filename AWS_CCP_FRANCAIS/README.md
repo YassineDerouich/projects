@@ -10,12 +10,16 @@ Permet de se préparer au format de l'examen et d'apprendre / revoir certaines n
 pour passer l'examen
 
 
-- Formation gratuite officielle d'AWS Trainings & Certifications (6h de vidéos), en français :
+- Formation gratuite officielle d'AWS Trainings & Certifications (6h de vidéos), disponible en français :
 
 `https://aws.amazon.com/fr/training/digital/aws-cloud-practitioner-essentials/`
 
 A l'aide d'exemples concrets, ce cours couvre une grande majorité de services qu'AWS propose ! La pédogagie est vraiment super, avec l'exemple continuel d'une
 entreprise souhaitant migrer ses applications vers le cloud AWS.
+
+- Documentation AWS
+
+`https://docs.aws.amazon.com/`
 
 
 
