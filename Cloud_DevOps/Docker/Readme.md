@@ -21,7 +21,7 @@ Un conteneur est une solution logicielle qui permet d'exécuter des processus da
 
 Docker est une solution logicielle permettant de lancer certaines applications dans des conteneurs logiciels. A noter que , par défaut, les conteneurs Docker sont automatiquement stoppé si le processus à l'intérieur de l'application a finit ses tâches. 
 
-- Une image Docker est un modèle en lecture seule, utiliser pour créer des conteneurs Docker. Elle est composée de plusieurs couches empaquetant toutes les installations, dépendances, bibliothèques, processus et codes d'application nécessaires pour un environnement de conteneur pleinement opérationnel.
+- Une image Docker est un modèle en lecture seule, utilisé pour créer des conteneurs Docker. Elle est composée de plusieurs couches empaquetant toutes les installations, dépendances, bibliothèques, processus et codes d'application nécessaires pour un environnement de conteneur pleinement opérationnel.
 
 example: l'image MySQL ( https://hub.docker.com/_/mysql ) contient l'application base de donnée MYSQL.
 
