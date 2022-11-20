@@ -21,11 +21,11 @@ Un conteneur est une solution logicielle qui permet d'exécuter des processus da
 
 Docker est une solution logicielle permettant de lancer certaines applications dans des conteneurs logiciels. A noter que , par défaut, les conteneurs Docker sont automatiquement stoppé si le processus à l'intérieur de l'application a finit ses tâches. 
 
-Une image Docker est un modèle en lecture seule, utiliser pour créer des conteneurs Docker. Elle est composée de plusieurs couches empaquetant toutes les installations, dépendances, bibliothèques, processus et codes d'application nécessaires pour un environnement de conteneur pleinement opérationnel.
+- Une image Docker est un modèle en lecture seule, utiliser pour créer des conteneurs Docker. Elle est composée de plusieurs couches empaquetant toutes les installations, dépendances, bibliothèques, processus et codes d'application nécessaires pour un environnement de conteneur pleinement opérationnel.
 
 example: l'image MySQL ( https://hub.docker.com/_/mysql ) contient l'application base de donnée MYSQL.
 
-Pour créer ses propres images, docker utilise les "dockerfile". 
+- Pour créer ses propres images, docker utilise les "dockerfile". 
 
 Les dockerfile sont des fichiers décrivant des instructions permettant la construction d'une image.  
 
@@ -37,7 +37,7 @@ Ici, on prend la dernière version de l'image de python 3.8 et on l'a modifie en
 
 Une fois cette image créée, on devra la lancé via un conteneur.  
 
-Pour lancer une application avec plusieurs conteneurs, on utilise le fichier docker-compose.yml (voir projet).
+- Pour lancer une application avec plusieurs conteneurs, on utilise le fichier docker-compose.yml (voir projet).
 
 # Utilisation et commande de base  #
 
