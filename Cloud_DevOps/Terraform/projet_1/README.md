@@ -2,7 +2,9 @@
 
 # Objectif du projet #
 
-L'objectif est de déployer une instance EC2 pouvant communiquer à Internet et accessible à distance. Ce petit projet débutant est l'occasion de découvrir l'utilisation de Terraform.
+L'objectif est de déployer une instance EC2 pouvant communiquer avec Internet et accessible à distance. 
+
+Ce petit projet débutant est l'occasion de découvrir l'utilisation de Terraform.
 
 
 
