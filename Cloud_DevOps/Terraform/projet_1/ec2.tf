@@ -9,6 +9,6 @@ resource "aws_instance" "linux" {
 
     tags = {
 
-        Name = var.tag_name
+        Name = "AMZ-LINUX-PARIS"
     }
 }
