@@ -10,7 +10,7 @@ Schéma de l'architecture :
 
 ![schema](https://user-images.githubusercontent.com/97849927/202782014-ed5c7e28-75c1-4486-9f5d-614715752fcf.png)
 
-### >Fichier main.tf ###
+> Fichier main.tf 
 -Déclaration du Cloud Provider (AWS)  
 ![image](https://user-images.githubusercontent.com/97849927/202905079-81198c45-7995-48bf-8973-7d6814c6497a.png)  
 
