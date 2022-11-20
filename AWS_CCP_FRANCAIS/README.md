@@ -10,7 +10,7 @@ Permet de se préparer au format de l'examen et d'apprendre / revoir certaines n
 pour passer l'examen
 
 
-- Formation gratuite officielle d'AWS Trainings & Certifications :
+- Formation gratuite officielle d'AWS Trainings & Certifications (6h de vidéos), en français :
 
 `https://aws.amazon.com/fr/training/digital/aws-cloud-practitioner-essentials/`
 
