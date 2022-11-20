@@ -1,7 +1,5 @@
 (/!\ SEE BELOW FOR ENGLISH VERSION /!\ )
 
-Bienvenue dans cette section dédiée au déploiement d'une infrastructure as code associée à AWS. 
-
 # Qu'est-ce que Terraform ? #
 
 ![schema]( https://miro.medium.com/max/1400/1*JPoEFqmHdt-G4D-MefftRQ.png )
