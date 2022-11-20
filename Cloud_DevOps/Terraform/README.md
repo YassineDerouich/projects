@@ -11,7 +11,7 @@ ainsi que des explications sur leur implémentation.
 
 Par exemple, au lieu dutiliser l'interface de la console AWS pour déployer une instance EC2 Linux, nous pouvons utiliser Terraform.
 
-Dans notre fichier tf ec2.tf on peut par exemple y écrire :
+Dans notre fichier ec2.tf nous pouvons par exemple y écrire :
 
 ![ec2_schem](https://user-images.githubusercontent.com/97849927/202903671-46ceb07f-1c83-4177-9a8b-aba51dc948b8.jpg)
 
