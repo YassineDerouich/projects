@@ -32,6 +32,7 @@ En 1er lieu on déclarera notre cloud provider , dans un fichier main.tf
 
 ![image](https://user-images.githubusercontent.com/97849927/202902930-4a0655ca-c4ab-4892-a15a-99e6ee33f0c4.png)
 
+voir https://registry.terraform.io/providers/hashicorp/aws/latest/docs doc officielle pour déployer ses services AWS
 
 Après avoir décris son infrastructure, voici les commandes de base:
 
