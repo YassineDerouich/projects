@@ -10,6 +10,8 @@ Schéma de l'architecture :
 
 ![schema](https://user-images.githubusercontent.com/97849927/202782014-ed5c7e28-75c1-4486-9f5d-614715752fcf.png)
 
+-Déclaration du Cloud Provider (AWS)
+![image](https://user-images.githubusercontent.com/97849927/202905079-81198c45-7995-48bf-8973-7d6814c6497a.png)
 
 -Création du VPC   
 ![image](https://user-images.githubusercontent.com/97849927/202808008-a884d700-8b75-412d-9543-5fd641c52c0e.png)
@@ -23,6 +25,9 @@ Schéma de l'architecture :
 ![image](https://user-images.githubusercontent.com/97849927/202808068-c9fed2e0-5538-4186-9084-313ef5f9ddd7.png)
 
 -Création de l'instance EC2
+
+![ec2_schem](https://user-images.githubusercontent.com/97849927/202905014-49ca1fc9-3de9-4fdc-ba19-36cc575cffdc.jpg)
+
 
 -Création de la NAT Gateway dans le subnet public pour permettre l'accès internet à l'instance EC2  
 
