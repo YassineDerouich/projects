@@ -13,7 +13,7 @@ Par exemple, au lieu dutiliser l'interface de la console AWS pour déployer une 
 
 Dans notre fichier ec2.tf nous pouvons par exemple y écrire :
 
-![ec2_schem](https://user-images.githubusercontent.com/97849927/202904187-4ba6a737-63eb-4689-a77c-7823fdb831d5.jpg)
+![ec2_schem](https://user-images.githubusercontent.com/97849927/202904245-74666949-b93a-4373-b6f7-bf3cb8a33517.jpg)
 
 
 # Utilisation & commandes de base #
