@@ -6,10 +6,14 @@ Bienvenue dans cette section dédiée au déploiement d'une infrastructure as co
 
 ![schema]( https://miro.medium.com/max/1400/1*JPoEFqmHdt-G4D-MefftRQ.png )
 
-Terraform est un outil d'infrastructure as code utilisant une syntaxe HCL (HashiCorp Configuration Language), qui décrit l'infrastructure cloud ou sur site souhaitée pour l'exécution d'une application avec son "état final". Terraform génère ensuite un plan permettant d'atteindre cet état final et exécute le plan pour mettre à disposition l'infrastructure.
+Terraform est un outil d'infrastructure as code utilisant une syntaxe HCL (HashiCorp Configuration Language), qui décrit l'infrastructure cloud ou sur site qu'on souhaite déployer grâce à des fichiers terraform ".tf" . Terraform génère ensuite un plan de tout ce qu'on souhaite déployer, et exécute le plan pour mettre à disposition l'infrastructure.
 
 Terraform est compatible avec un grand nombre de Cloud Providers. La liste est disponible sur https://registry.terraform.io/browse/providers
 ainsi que des explications sur leur implémentation.
+
+Par exemple, au lieu d'aller sur la console AWS pour déployer une instance EC2 Linux.
+
+Dans notre fichier tf on peut y écrire
 
 # Utilisation & commandes de base #
 
@@ -20,6 +24,8 @@ Installation sur Linux, voir https://computingforgeeks.com/how-to-install-terraf
 Après installation de terraform , il faudra créer un dossier pour l'infrastructure et y créer les fichiers terminant en .tf (format spécifique à Terraform).
 
 Sur ces fichiers on y décrira l'infrastructure à déployer. Par exemple, pour AWS on peut créer un fichier network.tf qui déploiera seulement les éléments réseaux (VPC,subnet,gateway,etc.) et un autre fichier ec2.tf qui se chargera de déployer les instances EC2. 
+
+
 
 
 ![terraform_1](https://user-images.githubusercontent.com/97849927/202788209-cac54007-79e5-46a2-bc1a-b2dbde78adff.png)
