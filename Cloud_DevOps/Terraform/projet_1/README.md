@@ -14,7 +14,7 @@ Schéma de l'architecture :
 
 
 1. Nous allons dans un premier temps créer un VPC. 
-2. Ensuite nous créérons un subnet public et un subnet private contenant l'instance EC2.
+2. Ensuite nous créérons un subnet public, et un subnet private contenant l'instance EC2.
 3. Notre subnet public relié à l'internet gateway permettra, grâce à la création d'une Nat Gateway, de faire sortir vers internet notre instance du subnet privé.
 4.  Nous souhaitons également nous connecter à distance à la machine, nous allons utiliser le service AWS SSM. Pour se faire, nous devons créer un rôle avec des permissions qui lui sont attachés.
 5. Enfin nous créerons un profil d'instance, qui contiendra notre rôle, et qui sera attribué à notre instance EC2.
