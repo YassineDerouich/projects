@@ -6,6 +6,10 @@
 
 ![dockerc](https://user-images.githubusercontent.com/97849927/202799743-6b6aa097-87e1-4676-91bf-94e966316505.png)
 
+1. Créer notre premier service MYSQL, en partant de l'image officelle MYSQL 5.7 avec les informations essentielles à son fonctionnement
+2. Créer le service WordPress depuis la dernière image officelle WordPress, ce service dépendant d'une BDD MYSQL.
+3. Mapping des ports (wordpress tourne sur le port 80 du conteneur, associé au port 8000 de la machine hôte).
+
 # Premier service : MYSQL #
 
 #### On va utiliser une image de mysql en version 5.7 et partager le volume de l'image dans un dossier db_data.  ####
