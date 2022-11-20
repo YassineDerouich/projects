@@ -23,20 +23,20 @@ Schéma de l'architecture :
 
 ### > Fichier network.tf ###
 
-- Création du VPC qui contiendra toute notre architecture   
+- Création du VPC qui contiendra toute notre architecture, il aura le réseau 10.0.0.0/16   
 ![vpc](https://user-images.githubusercontent.com/97849927/202911525-2a9bc443-8515-419f-b2ef-19a05f9e05d8.png)  
 
-- Création d'un subnet public pour sortir d'internet, et d'un subnet privé qui contiendra notre instance EC2.  
+- Création d'un subnet public pour sortir d'internet, et d'un subnet privé qui contiendra notre instance EC2.
 
 ![subnet](https://user-images.githubusercontent.com/97849927/202911640-6fa17146-6bd2-43c3-87a1-f87b97dcdcdc.PNG)  
 
 
-- Création de l'internet gateway , de l'elastic IP associé à la nat gateway  
+- Création de l'internet gateway reliée au subnet public, et de l'elastic IP associé à la nat gateway pour fournir une IP publique à notre instance EC2.
 
 ![igw_eip_ngw](https://user-images.githubusercontent.com/97849927/202911687-6ced5d3d-2291-41ab-b9c7-e4961b79a957.PNG)  
 
 
-- Création des tables de routage pour les 2 subnets 
+- Création des tables de routage pour les 2 subnets. Le subnet private balancera son traffic vers la ngw , et le public subnet balancera son traffic vers l'igw.
 
 ![route_public_et_route_private](https://user-images.githubusercontent.com/97849927/202911702-91ade934-8f44-44d8-b8ad-5666fc9ca7ca.PNG)  
 
@@ -48,18 +48,18 @@ Schéma de l'architecture :
 ### > Fichier iam.tf ###  
 
 
-- Création du rôle et de la policy  
+- Création du rôle "ec2-ssm-access" et de la policy  "SSMPolicy"
 
 ![iam_role_policy](https://user-images.githubusercontent.com/97849927/202911807-5256ebe4-6e34-4062-8f79-b43bd88fa2a1.PNG)  
 
-- Attachement de cette policy au rôle créée, et création d'un profil d'instane pour notre EC2.  
+- Attachement de cette policy au rôle créée, et création d'un profil d'instane qui sera délivré à notre instance EC2 pour utiliser SSM.  
 
 ![iam_policy_attachment_and_instance_profile](https://user-images.githubusercontent.com/97849927/202911842-44cf2da6-1926-4944-924a-c07745593b8d.PNG)  
 
 
 ### > Fichier ec2.tf ###  
 
--Création de l'instance EC2
+-Création de l'instance EC2 
 
 ![ec2](https://user-images.githubusercontent.com/97849927/202911761-64166cba-41e6-4a2f-baa4-a0cfa7748749.jpg)
 
