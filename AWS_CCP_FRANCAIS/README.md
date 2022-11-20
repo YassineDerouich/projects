@@ -1,6 +1,6 @@
 #### MATERIEL UTILISE POUR LA CERTIF AWS CCP ####
 
-
+![image](https://user-images.githubusercontent.com/97849927/202915554-97655dbf-645b-4b60-9ef8-1a72c9852b18.png)
 
 -6 tests pratiques en anglais trouvables sur Udemy : 
 
