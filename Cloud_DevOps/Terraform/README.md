@@ -9,7 +9,7 @@ Terraform est un outil d'infrastructure as code utilisant une syntaxe HCL (Hashi
 Terraform est compatible avec un grand nombre de Cloud Providers. La liste est disponible sur https://registry.terraform.io/browse/providers
 ainsi que des explications sur leur implémentation.
 
-Par exemple, au lieu d'aller sur la console AWS pour déployer une instance EC2 Linux grâce à Terraform.
+Par exemple, au lieu d'aller sur la console AWS pour déployer une instance EC2 Linux, nous pouvons le faire facilement grâce à Terraform.
 
 Dans notre fichier tf ec2.tf on peut par exemple y écrire :
 
